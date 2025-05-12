@@ -9,4 +9,5 @@ s.add(3)
 
 s.remove(2)
 print(s)
+print(f"The set has {len(s)} elements")
 input("press Enter to exit...")
