@@ -3,22 +3,24 @@
 
 <head>
 <style>
-    table, th, td {
+    #table1 {
         border: 3px solid black
         border-collapse: collapse;
         border-radius: .1rem;
-        border-style: none;
+       
     }
 
-    th, td {
-        background-color: cadetblue;
-        text-align: center;
+
+
+    #table2 {
+      border: 1px solid rgb(7, 129, 82);
+      border-collapse: collapse;
     }
 </style>
 </head>
 
 <body>
-    <table style="width:40rem">
+    <table id="table1" style="width:40rem">
   <tr style="height: 80%">
     <th>Firstname</th>
     <th>Lastname</th> 
@@ -40,6 +42,21 @@
     <td>80</td>
   </tr>
 </table>
+<div id="table2">
+  <table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+</div>
 </body>
 </html>
 
